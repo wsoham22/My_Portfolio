@@ -33,17 +33,19 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <nav className={`bg-blue-800 text-white py-4 px-8 shadow-md fixed top-0 w-full transition-transform duration-300 ${isScrolled ? '-translate-y-full' : 'translate-y-0'} z-50`}>
-        <div className="container mx-auto flex justify-between items-center">
+        <div className="container mx-auto flex flex-wrap justify-between items-center">
           <Link href="/" className="text-2xl font-bold">
             My Portfolio
           </Link>
-          <div className="space-x-6">
-            <Link href="/" className="hover:text-gray-300">Home</Link>
-            <Link href="#about-me" className="hover:text-gray-300">About Me</Link>
-            <Link href="#skills" className="hover:text-gray-300">Skills</Link>
-            <Link href="#education" className="hover:text-gray-300">Education</Link>
-            <Link href="#experience" className="hover:text-gray-300">Experience</Link>
-            <Link href="#projects" className="hover:text-gray-300">Projects</Link>
+          <div className="flex flex-wrap items-center">
+            <div className="hidden lg:flex lg:items-center lg:w-auto space-x-6">
+              <Link href="/" className="hover:text-gray-300">Home</Link>
+              <Link href="#about-me" className="hover:text-gray-300">About Me</Link>
+              <Link href="#skills" className="hover:text-gray-300">Skills</Link>
+              <Link href="#education" className="hover:text-gray-300">Education</Link>
+              <Link href="#experience" className="hover:text-gray-300">Experience</Link>
+              <Link href="#projects" className="hover:text-gray-300">Projects</Link>
+            </div>
           </div>
         </div>
       </nav>
