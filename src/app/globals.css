@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Tailwind CSS classes used in the components */
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #1e3a8a; /* Tailwind Blue 800 */
+}
+
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #d1d5db; /* Tailwind Gray 300 */
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Sections */
+section {
+  margin-top: 3rem;
+}
+
+/* Borders and Shadows */
+.border {
+  border: 1px solid #e5e7eb; /* Tailwind Gray 200 */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-blue-600 {
+  color: #2563eb; /* Tailwind Blue 600 */
+}
+
+.text-gray-600 {
+  color: #4b5563; /* Tailwind Gray 600 */
+}
+
+.text-gray-700 {
+  color: #374151; /* Tailwind Gray 700 */
+}
+
+/* Profile Picture */
+.rounded-full {
+  border-radius: 50%;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flex Layout */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+/* Example for scrolled class */
+.scrolled {
+  background-color: #1e3a8a; /* Darker blue when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
