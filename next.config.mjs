@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
+    images: {
+        unoptimized: true,
+      },
     pageExtensions: ['js', 'jsx'],
     experimental: {
         appDir: true, // If you're using Next.js's app directory for routing, enable this flag

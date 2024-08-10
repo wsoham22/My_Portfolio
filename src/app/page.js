@@ -63,19 +63,55 @@ const HomePage = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <>
-          <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={handleMenuToggle}></div>
-          <div className="lg:hidden fixed top-0 left-0 w-full bg-blue-800 text-white transition-transform transform translate-y-0 z-50">
-            <div className="flex flex-col px-4 py-6 space-y-4">
-              <Link href="#about-me" className="block py-2 px-4 hover:bg-blue-700 rounded transition duration-300" onClick={handleLinkClick}>About Me</Link>
-              <Link href="#skills" className="block py-2 px-4 hover:bg-blue-700 rounded transition duration-300" onClick={handleLinkClick}>Skills</Link>
-              <Link href="#education" className="block py-2 px-4 hover:bg-blue-700 rounded transition duration-300" onClick={handleLinkClick}>Education</Link>
-              <Link href="#experience" className="block py-2 px-4 hover:bg-blue-700 rounded transition duration-300" onClick={handleLinkClick}>Experience</Link>
-              <Link href="#projects" className="block py-2 px-4 hover:bg-blue-700 rounded transition duration-300" onClick={handleLinkClick}>Projects</Link>
-            </div>
-          </div>
-        </>
-      )}
+  <>
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={handleMenuToggle}></div>
+    <div className="lg:hidden fixed top-0 left-0 w-full bg-blue-800 text-white z-50">
+      <div className="flex flex-col px-4 py-6 space-y-4">
+        <Link
+          href="#about-me"
+          className="relative py-2 px-4 text-lg hover:text-blue-300 transition duration-300"
+          onClick={handleLinkClick}
+        >
+          About Me
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-300 transform scale-x-0 transition-transform duration-300"></span>
+        </Link>
+        <Link
+          href="#skills"
+          className="relative py-2 px-4 text-lg hover:text-blue-300 transition duration-300"
+          onClick={handleLinkClick}
+        >
+          Skills
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-300 transform scale-x-0 transition-transform duration-300"></span>
+        </Link>
+        <Link
+          href="#education"
+          className="relative py-2 px-4 text-lg hover:text-blue-300 transition duration-300"
+          onClick={handleLinkClick}
+        >
+          Education
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-300 transform scale-x-0 transition-transform duration-300"></span>
+        </Link>
+        <Link
+          href="#experience"
+          className="relative py-2 px-4 text-lg hover:text-blue-300 transition duration-300"
+          onClick={handleLinkClick}
+        >
+          Experience
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-300 transform scale-x-0 transition-transform duration-300"></span>
+        </Link>
+        <Link
+          href="#projects"
+          className="relative py-2 px-4 text-lg hover:text-blue-300 transition duration-300"
+          onClick={handleLinkClick}
+        >
+          Projects
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-300 transform scale-x-0 transition-transform duration-300"></span>
+        </Link>
+      </div>
+    </div>
+  </>
+)}
+
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-20 mt-16">
