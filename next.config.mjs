@@ -2,12 +2,15 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        unoptimized: true,
-      },
+      unoptimized: true, 
+    },
     pageExtensions: ['js', 'jsx'],
     experimental: {
-        appDir: true, // If you're using Next.js's app directory for routing, enable this flag
+      appDir: true, 
     },
-};
-
-export default nextConfig;
+    assetPrefix: '/My_Portfolio/', 
+    basePath: '/My_Portfolio', 
+  };
+  
+  export default nextConfig;
+  
